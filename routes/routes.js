@@ -10,11 +10,13 @@ router.get('/', function(req, res, next) {
   res.render('startscreen');
 });
 
-router.get('/home', function(req, res, next){
-    res.render('home')
-})
+router.get('/academic', function(req, res, next){
+    res.render('academic')
+});
 
-
+router.get('/dining', function(req, res, next){
+    res.render('dining')
+});
 ///////////////////////////// END OF PUBLIC ROUTES /////////////////////////////
 
 router.use(function(req, res, next){
